@@ -1,4 +1,4 @@
-# Random Quote Generator 
+<!-- # Random Quote Generator 
 In this task, we will use JavaScript to create a simple web page that generates random quotes. The user can click a button to generate a new quote, which will be displayed on the page.
 
 ## Instructions
@@ -21,4 +21,5 @@ In this task, we will use JavaScript to create a simple web page that generates 
 9. Test your page to make sure the button generates a new quote each time it is clicked.
 
 ## Result Example
-<img src="./desired-result.png">
+<img src="./desired-result.png"> -->
+
