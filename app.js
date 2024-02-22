@@ -12,11 +12,10 @@ let qoutes = ["You must be the change you wish to see in the world.",
     "you have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose."
 ];
 function generateQuote() {
-
     let randomNum = Math.floor(Math.random() * qoutes.length);
-
     let qouteList = document.querySelector("#quote-list");
     let qouteContainer = document.createElement("div");
+   
     qouteContainer.setAttribute("id", "quote-container");
     qouteList.appendChild(qouteContainer);
 
