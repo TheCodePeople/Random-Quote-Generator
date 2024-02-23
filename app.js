@@ -1,20 +1,24 @@
-const button=document.querySelector("#new-quote-button");
+let newQuoteButton = document.getElementById("new-quote-button");
+let quote = [
+  "ومن أكبر أخطائي أنني كنت امرّ على لحظات الفرح مروراً عابراً وأعيش الحزن بكل مشاعري",
+  "لايعرف النعمة الأالشاكر , ولا يشكر الأ العارف ",
+  "لا تتأخر بالصفح عن الآخرين , فربما لايكونوا موجودين عندما تود الصفح عنهم ",
+  "اصنع السعادة لنفسك ولا تنتظرها من شخص اخر ",
+];
 
-const arrNew=["1","2","3","4"]
-button.addEventListener("click",function(){
-const loop=arrNew[Math.floor(Math.random() * arrNew.length)] 
+newQuoteButton.addEventListener("click", () => {
+  const loop = quote[Math.floor(Math.random() * quote.length)];
+  let quoteContainer = document.createElement("div");
+  quoteContainer.id = "quote-container";
 
+  let quoteList = document.getElementById("quote-list");
+  // let quoteList = document.createElement("ul");
+  quoteList.appendChild(quoteContainer);
 
-const divContainer =document.createElement("div");
-divContainer.id ="quote-container";
+  let quoteText = document.createElement("p");
+  quoteText.id = "quote-text";
+  quoteText.style = "font-size:28px";
 
-const quote_list = document.querySelector("#quote-list");
-quote_list.appendChild(divContainer);
-
-const par=document.createElement("p")
-par.id="quote-text";
-par.textContent=loop;
-divContainer.appendChild(par);
-
-
+  quoteText.textContent = loop;
+  quoteContainer.appendChild(quoteText);
 });
